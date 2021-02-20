@@ -1,0 +1,49 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+#mainContainer {
+  padding: 0px;
+  margin: 0px;
+  height: 1000px;
+}
+
+#headBar {
+  background-color: #99896F;
+  width: 100vw;
+  height: 56px;
+  position: fixed;
+}
+
+#pageTitle {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 1vw;
+  font-size: 24px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+#navigation {
+  display: inline-block;
+  position: absolute;
+  font-size: 18px;
+  padding-top: 15px;
+  right: 4vw;
+}
+
+.pageNames {
+  display: inline-block;
+  text-align: right;
+  padding-left: 2vw;
+}
+
+#content {
+  padding-top: 56px;
+}
