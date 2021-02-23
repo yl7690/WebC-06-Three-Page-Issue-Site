@@ -1118,7 +1118,7 @@ label {
   margin-top: 1.5vw;
   padding: 1.1vw;
   cursor: pointer;
-  background: grey;
+  background: #af9b7b;
   transition: ease .5s;
   position: relative; /* ADDING THIS IS REQUIRED */
   font-size: 1.3vw;
