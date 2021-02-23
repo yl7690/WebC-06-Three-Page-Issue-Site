@@ -11,7 +11,7 @@ html {
 #mainContainer {
   padding: 0px;
   margin: 0px;
-  height: 1000px;
+  width: 100vw;
 }
 
 #headBar {
@@ -19,6 +19,7 @@ html {
   width: 100vw;
   height: 56px;
   position: fixed;
+  top: 0px;
 }
 
 #pageTitle {
@@ -28,6 +29,8 @@ html {
   font-size: 24px;
   padding-top: 10px;
   display: inline-block;
+  font-family: Saira;
+  font-weight: bold;
 }
 
 #navigation {
@@ -36,6 +39,23 @@ html {
   font-size: 18px;
   padding-top: 15px;
   right: 4vw;
+  font-family: Saira;
+  font-weight: medium;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 .pageNames {
@@ -45,5 +65,1107 @@ html {
 }
 
 #content {
+  width: 100vw;
   padding-top: 56px;
+}
+
+#indexCoverPic {
+  width: 100vw;
+  height: 55vw;
+}
+
+#indexTitles {
+  position: absolute;
+  top: 11vw;
+  left: 9vw;
+}
+
+#indexTitle1 {
+  font-family: Rubik;
+  font-size: 7vw;
+  text-align: center;
+}
+
+#overview {
+  padding-top: 10vw;
+}
+
+#ovTitle {
+  font-family: Saira;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+#ovContent {
+  margin-top: 3vw;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6vw;
+  position: relative;
+  margin-bottom: 10vw;
+  font-family: Saira;
+  font-size: 1.2vw;
+}
+
+#ovContent:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-top: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#ovContent:after {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-bottom: 0.5vw solid black;
+    border-right: 0.5vw solid black;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#indexDataSection {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)),
+  url(images/pic1.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 10vw;
+  padding-top: 5vw;
+}
+
+.dataColumns {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5vw;
+}
+
+.dataBox {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 27vw;
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(128, 126, 110, 0.5);
+}
+
+.dataPics {
+  width: 16vw;
+  height: 12vw;
+}
+
+.dataPicContainer {
+  padding-top: 2vw;
+  padding-bottom: 1.5vw;
+}
+
+.dataText {
+  font-family: Saira;
+  font-size: 1.2vw;
+  text-align: left;
+  width: 18vw;
+  padding-left: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reasonSection {
+  padding-bottom: 9vw;
+}
+
+#reasonSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7vw;
+}
+
+#reasonSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.reasons {
+  width: 92vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1vw;
+}
+
+.reasonPics {
+  width: 21vw;
+  height: 14vw;
+}
+
+.oddReason {
+  display: inline-block;
+  width: 25vw;
+  height: 31.5vw;
+  background-color: rgba(128, 126, 110, 0.5);
+  box-sizing: border-box;
+  padding: 2vw;
+  text-align: center;
+}
+
+#evenReason {
+  display: inline-block;
+  width: 25vw;
+  height: 31.5vw;
+  background-color: rgba(128, 126, 110, 0.5);
+  margin-top: 4vw;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 2vw;
+}
+
+.oddReason2 {
+  display: inline-block;
+  width: 25vw;
+  height: 33vw;
+  background-color: rgba(128, 126, 110, 0.5);
+  margin-top: 8vw;
+  box-sizing: border-box;
+  padding: 2vw;
+}
+
+#evenReason2 {
+  display: inline-block;
+  width: 25vw;
+  height: 34vw;
+  background-color: rgba(128, 126, 110, 0.5);
+  margin-top: 4vw;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 2vw;
+}
+
+.reasonTitle {
+  font-family: Saira;
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-align: left;
+  padding-top: 1.5vw;
+  padding-bottom: 0.5vw;
+}
+
+.reasonDetails {
+  font-family: Saira;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+#speciesCover {
+  width: 100vw;
+  height: 60vw;;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)),
+  url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#speciesTitle {
+  font-family: Rubik;
+  font-size: 7vw;
+  text-align: center;
+  position: absolute;
+  top: 10vw;
+  left: 15vw;
+}
+
+.gradientSection {
+  background-image: linear-gradient(to bottom, white, #C8B7A7);
+}
+
+#speciesDataSection {
+  padding-bottom: 5vw;
+}
+
+#speciesDataSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 4vw;
+}
+
+#speciesData {
+  text-align: center;
+  border-top: 0.7vw solid black;
+  border-bottom: 0.7vw solid black;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Saira;
+  font-size: 1.3vw;
+}
+
+.dataNumbers {
+  font-weight: bold;
+  font-size: 3.5vw;
+}
+
+.speciesDataLeftBoxes {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20vw;
+  height: 100%;
+  border-right: 0.7vw solid black;
+  padding: 2vw;
+  vertical-align: top;
+}
+
+#speciesDataRightBox {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20vw;
+  /* height: 20vw; */
+  padding: 2vw;
+  vertical-align: top;
+}
+
+#endangeredGallery {
+  padding-bottom: 5vw;
+}
+
+#endangeredSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7vw;
+}
+
+#endangeredSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.endangeredGalleryColumns {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.endangeredBoxes {
+  box-sizing: border-box;
+  background-color: grey;
+  width: 25vw;
+  height: 25vw;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-family: Saira;
+  vertical-align: top;
+  font-size: 1.2vw;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.3vw;
+  padding-top: 0.5vw;
+}
+
+.endangeredName {
+  font-weight: bold;
+  font-family: Saira;
+  font-size: 1.5vw;
+  text-align: left;
+  padding-top: 1.5vw;
+  padding-bottom: 0.5vw;
+  text-decoration: underline;
+  padding-left: 1vw;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.endangeredScientific {
+  font-size: 1.3vw;
+  font-family: Saira;
+  text-align: left;
+  padding-left: 1vw;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.endangeredPopulation {
+  font-size: 1.3vw;
+  font-family: Saira;
+  text-align: left;
+  padding-left: 1vw;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.endangeredIntro {
+  font-size: 1.15vw;
+  font-family: Saira;
+  text-align: left;
+}
+
+#leopard {
+  background-image: url(endangered/leopard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#leopardIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#leopard:hover #leopardIntro {
+  display: block;
+  color: #000;
+}
+
+#leopard:hover #leopardName{
+  display: none;
+}
+
+#leopard:hover #leopardScien{
+  display: none;
+}
+
+#leopard:hover #leopardNumber{
+  display: none;
+}
+
+#leopard:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/leopard.jpg);
+}
+
+#rhino {
+  background-image: url(endangered/black_rhino.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#rhinoIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#rhino:hover #rhinoIntro {
+  display: block;
+  color: #000;
+}
+
+#rhino:hover #rhinoName{
+  display: none;
+}
+
+#rhino:hover #rhinoScien{
+  display: none;
+}
+
+#rhino:hover #rhinoNumber{
+  display: none;
+}
+
+#rhino:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/black_rhino.jpg);
+}
+
+#ferret {
+  background-image: url(endangered/ferret.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ferretIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#ferret:hover #ferretIntro {
+  display: block;
+  color: #000;
+}
+
+#ferret:hover #ferretName{
+  display: none;
+}
+
+#ferret:hover #ferretScien{
+  display: none;
+}
+
+#ferret:hover #ferretNumber{
+  display: none;
+}
+
+#ferret:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/ferret.jpg);
+}
+
+#elephant {
+  background-image: url(endangered/elephant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#elephantIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#elephant:hover #elephantIntro {
+  display: block;
+  color: #000;
+}
+
+#elephant:hover #elephantName{
+  display: none;
+}
+
+#elephant:hover #elephantScien{
+  display: none;
+}
+
+#elephant:hover #elephantNumber{
+  display: none;
+}
+
+#elephant:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/elephant.jpg);
+}
+
+#turtle {
+  background-image: url(endangered/turtle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#turtleIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#turtle:hover #turtleIntro {
+  display: block;
+  color: #000;
+}
+
+#turtle:hover #turtleName{
+  display: none;
+}
+
+#turtle:hover #turtleScien{
+  display: none;
+}
+
+#turtle:hover #turtleNumber{
+  display: none;
+}
+
+#turtle:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/turtle.jpg);
+}
+
+#saola {
+  background-image: url(endangered/saola.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#saolaIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#saola:hover #saolaIntro {
+  display: block;
+  color: #000;
+}
+
+#saola:hover #saolaName{
+  display: none;
+}
+
+#saola:hover #saolaScien{
+  display: none;
+}
+
+#saola:hover #saolaNumber{
+  display: none;
+}
+
+#saola:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/saola.jpg);
+}
+
+#gorilla {
+  background-image: url(endangered/gorilla.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gorillaIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#gorilla:hover #gorillaIntro {
+  display: block;
+  color: #000;
+}
+
+#gorilla:hover #gorillaName{
+  display: none;
+}
+
+#gorilla:hover #gorillaScien{
+  display: none;
+}
+
+#gorilla:hover #gorillaNumber{
+  display: none;
+}
+
+#gorilla:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/gorilla.jpg);
+}
+
+#sunda {
+  background-image: url(endangered/tiger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sundaIntro {
+  display: none;
+  padding: 1vw;
+}
+
+#sunda:hover #sundaIntro {
+  display: block;
+  color: #000;
+}
+
+#sunda:hover #sundaName{
+  display: none;
+}
+
+#sunda:hover #sundaScien{
+  display: none;
+}
+
+#sunda:hover #sundaNumber{
+  display: none;
+}
+
+#sunda:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(endangered/tiger.jpg);
+}
+
+#extinctGallery {
+  padding-bottom: 10vw;
+}
+
+#extinctSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7vw;
+}
+
+#extinctSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.extinctBoxes {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 30vw;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-family: Saira;
+  vertical-align: top;
+  font-size: 1.2vw;
+}
+
+.extinctName {
+  font-weight: bold;
+  font-size: 1.7vw;
+  padding-left: 1vw;
+  padding-top: 1vw;
+}
+
+#Rhinoceros {
+  background-image: url(extinct/Rhinoceros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#RhinocerosIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#Rhinoceros:hover #RhinocerosIntro {
+  display: block;
+  color: #fff;
+}
+
+#Rhinoceros:hover #RhinocerosName{
+  display: none;
+}
+
+#Rhinoceros:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/Rhinoceros.jpg);
+}
+
+#Baiji {
+  background-image: url(extinct/baiji.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#BaijiIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#Baiji:hover #BaijiIntro {
+  display: block;
+  color: #fff;
+}
+
+#Baiji:hover #BaijiName{
+  display: none;
+}
+
+#Baiji:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/baiji.jpg);
+}
+
+#Ibex {
+  background-image: url(extinct/ibex.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#IbexIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#Ibex:hover #IbexIntro {
+  display: block;
+  color: #fff;
+}
+
+#Ibex:hover #IbexName{
+  display: none;
+}
+
+#Ibex:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/ibex.jpg);
+}
+
+#pigeon {
+  background-image: url(extinct/pigeon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pigeonIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#pigeon:hover #pigeonIntro {
+  display: block;
+  color: #fff;
+}
+
+#pigeon:hover #pigeonName{
+  display: none;
+}
+
+#pigeon:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/pigeon.jpg);
+}
+
+#tiger {
+  background-image: url(extinct/tiger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tigerIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#tiger:hover #tigerIntro {
+  display: block;
+  color: #fff;
+}
+
+#tiger:hover #tigerName{
+  display: none;
+}
+
+#tiger:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/tiger.jpg);
+}
+
+#seaCow {
+  background-image: url(extinct/sea_cow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seaCowIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#seaCow:hover #seaCowIntro {
+  display: block;
+  color: #fff;
+}
+
+#seaCow:hover #seaCowName{
+  display: none;
+}
+
+#seaCow:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/sea_cow.png);
+}
+
+#auk {
+  background-image: url(extinct/auk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aukIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+  font-size: 1.2vw;
+}
+
+#auk:hover #aukIntro {
+  display: block;
+  color: #fff;
+}
+
+#auk:hover #aukName{
+  display: none;
+}
+
+#auk:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/auk.jpg);
+}
+
+#parakeet {
+  background-image: url(extinct/parakeet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parakeetIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#parakeet:hover #parakeetIntro {
+  display: block;
+  color: #fff;
+}
+
+#parakeet:hover #parakeetName{
+  display: none;
+}
+
+#parakeet:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/parakeet.jpg);
+}
+
+#pupfish {
+  background-image: url(extinct/fish.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pupfishIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#pupfish:hover #pupfishIntro {
+  display: block;
+  color: #fff;
+}
+
+#pupfish:hover #pupfishName{
+  display: none;
+}
+
+#pupfish:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/fish.jpg);
+}
+
+#pooUli {
+  background-image: url(extinct/poo-uli.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pooUliIntro {
+  display: none;
+  width: 18vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vw;
+}
+
+#pooUli:hover #pooUliIntro {
+  display: block;
+  color: #fff;
+}
+
+#pooUli:hover #pooUliName{
+  display: none;
+}
+
+#pooUli:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(extinct/poo-uli.jpg);
+}
+
+#actionCover {
+  width: 100vw;
+  height: 60vw;;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)),
+  url(images/treatment.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#actionCoverTitle {
+  font-family: Rubik;
+  font-size: 7vw;
+  text-align: center;
+  position: absolute;
+  top: 10vw;
+  left: 15vw;
+}
+
+#actionsSection {
+  padding-bottom: 10vw;
+}
+
+#actionIntroPara {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 6vw;
+  font-family: Saira;
+  font-size: 1.2vw;
+}
+
+#actionIntroPara:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-top: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#actionIntroPara:after {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    border-bottom: 0.5vw solid black;
+    border-right: 0.5vw solid black;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#actionsSectionTitle {
+  font-family: Russo One;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 3vw;
+  position: relative;
+  width: 65vw;
+  margin-top: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7vw;
+}
+
+#actionsSectionTitle:after {
+    content: "";
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+input {
+    display: none;
+}
+
+label {
+  display: block;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vw;
+  padding: 1.1vw;
+  cursor: pointer;
+  background: grey;
+  transition: ease .5s;
+  position: relative; /* ADDING THIS IS REQUIRED */
+  font-size: 1.3vw;
+  font-family: Saira;
+  font-weight: bold;
+}
+
+label:hover {
+  background: #7c7256;
+}
+
+label::after {
+  content: '+';
+  font-size: 2.5vw;
+  font-family: Saira;
+  font-weight: bold;
+  position: absolute;
+  right: 2vw;
+  top: 0px;
+}
+
+input:checked + label::after {
+  content: '-';
+  font-size: 2.5vw;
+  font-family: Saira;
+  font-weight: bold;
+  position: absolute;
+  right: 2vw;
+  top: 0px;
+}
+
+.actionContent {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2vw;
+  font-family: Saira;
+}
+
+input + label + .actionContent {
+  display: none;
+}
+
+input:checked + label + .actionContent {
+  display: block;
+}
+
+#underline {
+  text-decoration: underline;
 }
